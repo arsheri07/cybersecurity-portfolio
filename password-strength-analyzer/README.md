@@ -40,23 +40,13 @@ This is intentionally still simpler than a production library like [zxcvbn](http
 - CSS3 (custom properties, no frameworks)
 - Vanilla JavaScript (no dependencies)
 
-Zero build step — open `index.html` in any browser and it works.
-
-## Running locally
-
-```bash
-git clone https://github.com/<your-username>/password-strength-analyzer.git
-cd password-strength-analyzer
-open index.html   # or just double-click the file
-```
-
 No installs, no server required.
 
 ## Limitations & honest tradeoffs
 
 - The dictionary word list is a small hardcoded sample (~70 entries) for demonstration. Production libraries like [zxcvbn](https://github.com/dropbox/zxcvbn) use much larger corpora and more sophisticated pattern matching (keyboard walks, date patterns, name+number combos).
 - The crack-time numbers depend entirely on the stated guesses/second assumptions, which are order-of-magnitude estimates, not measured benchmarks — real attacker hardware varies widely.
-- `crypto.subtle` (used for the SHA-1 hashing in the breach check) requires a secure context — it works over HTTPS (like GitHub Pages) but may not work if you open the file directly from disk in some browsers.
+- `crypto.subtle` (used for the SHA-1 hashing in the breach check) requires a secure context — it works over HTTPS (like GitHub Pages) and localhost, but may be blocked if you open the HTML file directly from disk (file:// protocol) in some browsers.
 - The HIBP breach check requires an internet connection; if it fails, the tool falls back to entropy/rule-based scoring only and says so explicitly rather than silently guessing.
 - This is a teaching/portfolio tool, not a vetted security product — it shouldn't be the only gate in front of a real signup form.
 
