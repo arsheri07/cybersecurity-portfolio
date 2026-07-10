@@ -54,8 +54,6 @@ No installs, no server required.
 
 ## Limitations & honest tradeoffs
 
-Being upfront about these in the README is itself a signal of engineering maturity to anyone reviewing your repo:
-
 - The dictionary word list is a small hardcoded sample (~70 entries) for demonstration. Production libraries like [zxcvbn](https://github.com/dropbox/zxcvbn) use much larger corpora and more sophisticated pattern matching (keyboard walks, date patterns, name+number combos).
 - The crack-time numbers depend entirely on the stated guesses/second assumptions, which are order-of-magnitude estimates, not measured benchmarks — real attacker hardware varies widely.
 - `crypto.subtle` (used for the SHA-1 hashing in the breach check) requires a secure context — it works over HTTPS (like GitHub Pages) but may not work if you open the file directly from disk in some browsers.
