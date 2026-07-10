@@ -2,7 +2,7 @@
 
 A single-page, client-side password strength analyzer built with vanilla HTML, CSS, and JavaScript. Type a password and get a live strength score, entropy-based stats, estimated crack time, disguised-dictionary-word detection, and a real breach check against the Have I Been Pwned database.
 
-[Live Demo] ← https://arsheri07.github.io/cybersecurity-portfolio/
+[Live Demo] ← https://arsheri07.github.io/cybersecurity-portfolio//password-strength-analyzer/
 
 ## Why this project
 
