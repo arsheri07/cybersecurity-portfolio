@@ -62,3 +62,4 @@ No installs, no server required.
 
 MIT — feel free to fork and adapt for your own portfolio.
 
+Built by Akshithreddy Sheri — github.com/arsheri07
