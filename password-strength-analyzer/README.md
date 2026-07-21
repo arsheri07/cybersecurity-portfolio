@@ -61,5 +61,3 @@ No installs, no server required.
 ## License
 
 MIT — feel free to fork and adapt for your own portfolio.
-
-Built by Akshithreddy Sheri — github.com/arsheri07
